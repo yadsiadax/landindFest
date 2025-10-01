@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Semana del Cine - La Paz</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /* Reset y base */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Lato", sans-serif;
+        background-color: #0d0d0d;
+        color: #f1faee;
+        line-height: 1.6;
+      }
+
+      h1,
+      h2,
+      h3 {
+        font-family: "Bebas Neue", cursive;
+        text-transform: uppercase;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+
+      section {
+        padding: 60px 0;
+      }
+
+      /* Hero */
+      .hero {
+        background: linear-gradient(
+            rgba(13, 13, 13, 0.8),
+            rgba(13, 13, 13, 0.9)
+          ),
+          url("https://source.unsplash.com/random/1200x600/?cinema,la-paz")
+            no-repeat center center/cover;
+        text-align: center;
+        padding: 100px 20px;
+      }
+
+      .hero h1 {
+        font-size: 3.5rem;
+        color: #e63946;
+        margin-bottom: 20px;
+      }
+
+      .hero p {
+        font-size: 1.2rem;
+        max-width: 700px;
+        margin: 0 auto 30px;
+      }
+
+      .cta-button {
+        display: inline-block;
+        background-color: #e63946;
+        color: white;
+        padding: 14px 32px;
+        font-size: 1.2rem;
+        font-weight: bold;
+        text-decoration: none;
+        border-radius: 50px;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 10px rgba(230, 57, 70, 0.4);
+      }
+
+      .cta-button:hover {
+        background-color: #c1121f;
+        transform: translateY(-3px);
+        box-shadow: 0 6px 15px rgba(230, 57, 70, 0.6);
+      }
+
+      /* Objetivo */
+      .objetivo {
+        background-color: #1a1a1a;
+      }
+
+      .objetivo h2 {
+        text-align: center;
+        font-size: 2.5rem;
+        margin-bottom: 30px;
+        color: #ffd166;
+      }
+
+      .objetivo p {
+        text-align: center;
+        font-size: 1.1rem;
+        max-width: 800px;
+        margin: 0 auto;
+      }
+
+      /* Testimonios */
+      .testimonios {
+        background-color: #0d0d0d;
+      }
+
+      .testimonios h2 {
+        text-align: center;
+        font-size: 2.5rem;
+        margin-bottom: 40px;
+        color: #a8dadc;
+      }
+
+      .cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 25px;
+      }
+
+      .card {
+        background: #1a1a1a;
+        padding: 25px;
+        border-radius: 12px;
+        max-width: 350px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      }
+
+      .card p {
+        font-style: italic;
+        margin-bottom: 15px;
+      }
+
+      .card .author {
+        font-weight: bold;
+        color: #ffd166;
+      }
+
+      /* Footer */
+      footer {
+        text-align: center;
+        padding: 30px 0;
+        background-color: #000;
+        font-size: 1rem;
+        color: #a8dadc;
+      }
+
+      /* Responsive */
+      @media (max-width: 768px) {
+        .hero h1 {
+          font-size: 2.5rem;
+        }
+
+        .hero p {
+          font-size: 1rem;
+        }
+
+        .cta-button {
+          padding: 12px 24px;
+          font-size: 1.1rem;
+        }
+
+        .objetivo h2,
+        .testimonios h2 {
+          font-size: 2rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <h1>Luces, cámara… ¡La Paz!</h1>
+        <p>
+          Del 10 al 17 de junio, vive una semana mágica donde el cine se
+          encuentra con las calles, plazas y corazones de La Paz.
+        </p>
+        <a href="#entradas" class="cta-button" id="entradas"
+          >¡Reserva tu lugar antes de que se agoten las butacas!</a
+        >
+      </div>
+    </section>
+
+    <!-- Objetivo -->
+    <section class="objetivo">
+      <div class="container">
+        <h2>¿Por qué existe esta semana?</h2>
+        <p>
+          La Semana del Cine en La Paz es un espacio abierto, diverso y
+          apasionado por el séptimo arte, creado para celebrar el poder
+          transformador del cine. Buscamos acercar a la comunidad —especialmente
+          a jóvenes y nuevos públicos— al cine boliviano e independiente,
+          fomentar el diálogo cultural, visibilizar talentos locales y convertir
+          cada sala, plaza y rincón de la ciudad en una pantalla viva.
+        </p>
+      </div>
+    </section>
+
+    <!-- Testimonios -->
+    <section class="testimonios">
+      <div class="container">
+        <h2>Lo que dicen quienes ya vivieron el cine en La Paz</h2>
+        <div class="cards">
+          <div class="card">
+            <p>
+              “¡Fue la primera vez que vi una película boliviana en una plaza!
+              Sentí que el cine era mío.”
+            </p>
+            <div class="author">— Camila R., estudiante de Comunicación</div>
+          </div>
+          <div class="card">
+            <p>
+              “Gracias a la Semana del Cine descubrí a una nueva generación de
+              realizadores que están contando nuestras historias con valentía.”
+            </p>
+            <div class="author">— Jorge M., docente y crítico de cine</div>
+          </div>
+          <div class="card">
+            <p>
+              “Una experiencia que conecta lo local con lo universal. ¡Ya quiero
+              la próxima edición!”
+            </p>
+            <div class="author">— @CineEnPaz en Instagram</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        Semana del Cine La Paz • 2024 • Organizado por el Colectivo Audiovisual
+        Paceño
+      </div>
+    </footer>
+  </body>
+</html>
